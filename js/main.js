@@ -158,6 +158,10 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+  const cuisines = document.createElement('h4');
+  cuisines.innerHTML = restaurant.cuisine_type;
+  li.append(cuisines);
+
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
@@ -174,6 +178,8 @@ createRestaurantHTML = (restaurant) => {
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
   li.append(address);
+
+ 
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';

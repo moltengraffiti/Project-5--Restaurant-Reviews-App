@@ -88,6 +88,12 @@
   #reviews-list li p {
     margin: 0 0 10px;
     display: flex;
+
+  }
+  #reviews-list li h3 {
+    margin: 0px;
+    display: flex;
+
   }
   #restaurant-hours td {
     color: #666;
