@@ -163,14 +163,17 @@ createRestaurantHTML = (restaurant) => {
     name.innerHTML = restaurant.name;
     li.append(name);
 
-  /*Add cuisine type to the main page cards */
-
+  
+/* Breakup the card content for clarity */
+  const hr=document.createElement('hr');
+  li.append(hr);
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
+  /*Add cuisine type to the main page cards */
   const cuisines = document.createElement('h4');
   cuisines.innerHTML = restaurant.cuisine_type;
   li.append(cuisines);
