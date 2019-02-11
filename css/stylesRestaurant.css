@@ -4,13 +4,23 @@
     background-color: #f3f3f3;
     list-style: outside none none;
     margin: 0;
-    padding: 30px 15px 60px;
+    padding: 10px 15px 60px;
     text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  #restaurants-list li h4 {
+    background-color:#595a5a;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+  }
+  /*box shadow from W3 Schools  - https://www.w3schools.com/css/css3_shadows.asp */
   #restaurants-list li {
     background-color: #fff;
     border: 2px solid #ccc;
@@ -22,6 +32,8 @@
     width: 270px;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #restaurants-list .restaurant-img {
     background-color: #ccc;
@@ -30,6 +42,8 @@
     min-height: 248px;
     min-width: 100%;
     margin: 2%;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #restaurants-list li h1 {
     color: #0000A0;
@@ -60,6 +74,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    border-radius: 10px;
   }
   
-  
+ 

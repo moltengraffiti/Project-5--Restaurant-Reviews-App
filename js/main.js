@@ -158,6 +158,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+  /*Add cuisine type to the main page cards */
   const cuisines = document.createElement('h4');
   cuisines.innerHTML = restaurant.cuisine_type;
   li.append(cuisines);
@@ -167,6 +168,7 @@ createRestaurantHTML = (restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
+  /* Name should be clickable, not just details button */
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
   li.append(name);
