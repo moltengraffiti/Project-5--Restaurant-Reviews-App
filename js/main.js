@@ -158,20 +158,24 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+    /* Name should be clickable, not just details button */
+    const name = document.createElement('h1');
+    name.innerHTML = restaurant.name;
+    li.append(name);
+
   /*Add cuisine type to the main page cards */
-  const cuisines = document.createElement('h4');
-  cuisines.innerHTML = restaurant.cuisine_type;
-  li.append(cuisines);
+
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
-  /* Name should be clickable, not just details button */
-  const name = document.createElement('h1');
-  name.innerHTML = restaurant.name;
-  li.append(name);
+  const cuisines = document.createElement('h4');
+  cuisines.innerHTML = restaurant.cuisine_type;
+  li.append(cuisines);
+
+
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
@@ -186,7 +190,9 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
-  li.append(more)
+  li.append(more);
+
+ 
 
   return li
 }
