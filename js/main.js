@@ -158,15 +158,18 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
-  const image = document.createElement('img');
-  image.className = 'restaurant-img';
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  li.append(image);
-
   /* Change to h3 */
   const name = document.createElement('h3');
   name.innerHTML = restaurant.name;
   li.append(name);
+
+  const hr = document.createElement('hr');
+  li.append(hr);
+
+  const image = document.createElement('img');
+  image.className = 'restaurant-img';
+  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  li.append(image);
 
   /*Add cuisine type to the main page cards */
   const cuisines = document.createElement('h4');
@@ -184,9 +187,9 @@ createRestaurantHTML = (restaurant) => {
   /* Change to button, link doesn't make sense here */
   const more = document.createElement('button');
   more.innerHTML = 'More Info';
-  more.onClick=function(){
-      const url=DBHelper.urlForRestaurant(restaurant);
-      window.location=url;
+  more.onClick = function () {
+    const url = DBHelper.urlForRestaurant(restaurant);
+    window.location = url;
   }
 
   li.append(more);
