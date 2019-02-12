@@ -73,10 +73,10 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  */
 initMap = () => {
   self.newMap = L.map('map', {
-        center: [40.722216, -73.987501],
-        zoom: 12,
-        scrollWheelZoom: false
-      });
+    center: [40.722216, -73.987501],
+    zoom: 12,
+    scrollWheelZoom: false
+  });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoibW9sdGVuZyIsImEiOiJjanJ6bjBzbDMxYWhvNDRvM2s2OGJpamE4In0._AEvzFcU3_NwNpoSh84oFg',
     maxZoom: 18,
@@ -158,31 +158,20 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
-  
-
-  
-/* Breakup the card content for clarity */
-/* Removing the HR
-  const hr=document.createElement('hr');
-  li.append(hr);
-  */
-
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   li.append(image);
 
-    /* Name should be clickable, not just details button */
-    const name = document.createElement('h1');
-    name.innerHTML = restaurant.name;
-    li.append(name);
+  /* Change to h2 */
+  const name = document.createElement('h2');
+  name.innerHTML = restaurant.name;
+  li.append(name);
 
   /*Add cuisine type to the main page cards */
   const cuisines = document.createElement('h4');
   cuisines.innerHTML = restaurant.cuisine_type;
   li.append(cuisines);
-
-
 
   const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
@@ -192,14 +181,15 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
- 
-
-  const more = document.createElement('a');
+  /* Change to button, link doesn't make sense here */
+  const more = document.createElement('button');
   more.innerHTML = 'More Info';
-  more.href = DBHelper.urlForRestaurant(restaurant);
-  li.append(more);
+  more.onClick=function(){
+      const url=DBHelper.urlForRestaurant(restaurant);
+      window.location=url;
+  }
 
- 
+  li.append(more);
 
   return li
 }
@@ -218,7 +208,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 
-} 
+}
 /* addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
