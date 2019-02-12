@@ -182,7 +182,7 @@ createRestaurantHTML = (restaurant) => {
 
 
 
-  const neighborhood = document.createElement('p');
+  const neighborhood = document.createElement('h4');
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 

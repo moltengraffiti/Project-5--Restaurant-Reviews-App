@@ -87,12 +87,12 @@ width: 80%;
 
   /* Style the button */
 #restaurants-list button {
-  background-color:rgb(41, 160, 240);
+  background-color:rgb(60, 153, 220);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 4px; 
   padding: 6px;
   border-radius: 10px;
-  border: 2px solid rgba(6, 71, 212, 0.2);
+  border: 2px solid rgba(47, 47, 47, 0.3);
   color: white;
   font-weight: 300;
   text-align: center;
