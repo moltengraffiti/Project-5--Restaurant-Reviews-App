@@ -199,13 +199,15 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'More Info';
   li.append(more);
 
+  more.addEventListener (click, function() {
+    const url = DBHelper.urlForRestaurant(restaurant);
+      window.location = url;
+    });
+
   return li
 }
 
-more.addEventListener (click, function() {
-  const url = DBHelper.urlForRestaurant(restaurant);
-    window.location = url;
-  });
+
 
 /**
  * Add markers for current restaurants to the map.
@@ -233,13 +235,14 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
-if(!navigator.serviceWorker){
+//Register the service worker
+if(navigator.serviceWorker){
   navigator.serviceWorker.register("/sw.js")
-  .then(function(){
-    console.log('Registered');
+  .then(function(registration){
+    console.log('Service worker registration successful, scope is', registration.scope);
   })
-  .catch(function(){
-    console.log('Registration failed');
+  .catch(function(err){
+    console.log('Service worker egistration failed'), err;
   });
 
 }
