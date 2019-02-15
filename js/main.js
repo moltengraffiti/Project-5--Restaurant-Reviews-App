@@ -198,11 +198,12 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('button');
   more.innerHTML = 'More Info';
   li.append(more);
-
+/*
   more.addEventListener (click, function() {
     const url = DBHelper.urlForRestaurant(restaurant);
       window.location = url;
     });
+    */
 
   return li
 }
@@ -242,7 +243,7 @@ if(navigator.serviceWorker){
     console.log('Service worker registration successful, scope is', registration.scope);
   })
   .catch(function(err){
-    console.log('Service worker egistration failed'), err;
+    console.log('Service worker registration failed'), err;
   });
 
 }
