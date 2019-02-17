@@ -4,15 +4,6 @@
 
 }
 
-@media screen and (max-width: 1200px){
-    #restaurants-list li {
-        width: calc(25% - 30px);
-      }
-
-
-
-
-}
 @media screen and (max-width: 1024px){
     #restaurants-list li {
         width: calc(33.3333% - 30px);

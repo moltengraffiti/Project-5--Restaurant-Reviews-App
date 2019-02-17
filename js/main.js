@@ -182,7 +182,7 @@ createRestaurantHTML = (restaurant) => {
 
 
 
-  const neighborhood = document.createElement('h4');
+  const neighborhood = document.createElement('p');
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 
@@ -197,13 +197,13 @@ createRestaurantHTML = (restaurant) => {
   /* Change to button, link doesn't make sense here */
   const more = document.createElement('button');
   more.innerHTML = 'More Info';
-  li.append(more);
-/*
-  more.addEventListener (click, function() {
+  more.addEventListener ("click", function() {
     const url = DBHelper.urlForRestaurant(restaurant);
       window.location = url;
     });
-    */
+    
+  
+  li.append(more);
 
   return li
 }
@@ -235,16 +235,4 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-
-//Register the service worker
-if(navigator.serviceWorker){
-  navigator.serviceWorker.register("/sw.js")
-  .then(function(registration){
-    console.log('Service worker registration successful, scope is', registration.scope);
-  })
-  .catch(function(err){
-    console.log('Service worker registration failed'), err;
-  });
-
-}
 
