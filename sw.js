@@ -3,7 +3,16 @@
 const cacheName='restaurant-v1';
 const cacheAssets=[
     '/',
-    'index.html',
+    '/index.html',
+    '/restaurant.html',
+    'css/stylesRestaurant.css',
+    'css/stylesMain.css',
+    'css/stylesRestaurantDetail.css',
+    'css/mediaQueries.css',
+    'js/dbhelper.js',
+    'js/main.js',
+    'js/restaurant_info.js',
+   
 
 ];
 
