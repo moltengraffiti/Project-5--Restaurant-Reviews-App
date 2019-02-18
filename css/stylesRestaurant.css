@@ -89,6 +89,7 @@
   margin: 4px;
   padding: 6px;
   border-radius: 10px;
+  width:80%;
   border: 2px solid rgba(47, 47, 47, 0.3);
   color: white;
   font-weight: 300;
@@ -135,7 +136,6 @@
   
 }
 #restaurant-info-container {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,6 +148,8 @@
   width: 50%;
   background-color: white;
   padding: 10px;
+  align-content: center;
+  margin-bottom: 10px;
 }
 #restaurant-hours-header{
 background-color: #4d4e4e;
@@ -160,6 +162,7 @@ text-align: center;
 text-transform: uppercase;
 width: 100%;
 margin: 0 0 20px;
+border: 2px solid rgba(8, 8, 8, 0.3);
 }
 #restaurant-address {
   background-color: #4d4e4e;
@@ -172,6 +175,7 @@ margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  border: 2px solid rgba(8, 8, 8, 0.3);
  
   
 }
@@ -185,24 +189,26 @@ margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  border: 2px solid rgba(8, 8, 8, 0.3);
 
 }
 
 #reviews-container {
-
   display: flex;
   flex-direction: column;
 }
 #reviews-container h2 {
-  background-color: #0a0a0a;
-  color: #ddd;
+  background-color: rgb(60, 153, 220);
+  color: white;
   font-size: 12pt;
   font-weight: 300;
   letter-spacing: 2px;
-  padding: 2px 0;
+  padding: 8px;
+  margin: 10px 0px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  border: 2px solid rgba(47, 47, 47, 0.3);
 
 }
 #reviews-container h3 {
