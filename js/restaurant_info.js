@@ -157,11 +157,11 @@ createReviewHTML = (review) => {
   const hr3 = document.createElement('hr');
   li.append(hr3);
 
-  const date = document.createElement('h4');
+  const date = document.createElement('p');
   date.innerHTML = review.date;
   li.appendChild(date);
 
-  const rating = document.createElement('h4');
+  const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
   li.appendChild(rating);
 

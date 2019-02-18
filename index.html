@@ -22,16 +22,16 @@
     </nav>
   </header>
 
-  <main id="maincontent" tabindex=-1>
-    <section id="map-container" role="application">
-      <div id="map" role="application"></div>
+  <main id="maincontent" tabindex="0">
+    <section id="map-container" tabindex="-1" role="application">
+      <div id="map" tabindex="-1" role="application"></div>
     </section>
     <section>
 
-      <div class="filter-options" aria-label="Filter the restaurants" tabindex="0" role="listbox">
+      <div class="filter-options" aria-label="Filter the restaurants" role="listbox">
         <h2>Filter Results</h2>
      
-          <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          <select id="neighborhoods-select" name="neighborhoods"  tabindex="0" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>
           <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
