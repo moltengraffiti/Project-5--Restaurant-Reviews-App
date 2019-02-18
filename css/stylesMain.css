@@ -107,12 +107,13 @@ nav h1 {
 /* Display list items side by side */
 #breadcrumb li {
   display: inline;
+
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li + li:before {
   padding: 10px;
-  color: black;
+  color: white;
   content: "/\00a0";
 }
 
