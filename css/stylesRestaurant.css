@@ -99,15 +99,22 @@
   
 }
 
-
+.inside{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 220px;
+  margin: 0 0 20px;
+  
 }
 .inside #map {
   background-color: #ccc;
   height: 100%;
   width: 100%;
+ 
 }
 
 #restaurant-name {
@@ -128,21 +135,33 @@
   
 }
 #restaurant-info-container {
-  
-  margin: 20px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 
+  
+}
+
+#restaurant-info-container #restaurant-hours{
+  border: 2px dashed rgb(179, 172, 172);
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+}
+#restaurant-hours-header{
+background-color: #4d4e4e;
+color: #ddd;
+font-size: 12pt;
+font-weight: 300;
+letter-spacing: 2px;
+padding: 2px 0;
+text-align: center;
+text-transform: uppercase;
+width: 100%;
+margin: 0 0 20px;
 }
 #restaurant-address {
-  font-size: 1.3em;
-  margin: 10px;
- 
-  
-}
-#restaurant-cuisine {
   background-color: #4d4e4e;
   color: #ddd;
   font-size: 12pt;
@@ -153,33 +172,63 @@
   text-align: center;
   text-transform: uppercase;
   width: 100%;
-
-}
-#restaurant-container,
-#reviews-container {
-
+ 
   
 }
+#restaurant-cuisine {
+  background-color: #4d4e4e;
+  color: #ddd;
+  font-size: 12pt;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+
+}
+
 #reviews-container {
-  padding: 30px 40px 80px;
+
+  display: flex;
+  flex-direction: column;
 }
 #reviews-container h2 {
-  color: #f58500;
-  font-size: 24pt;
+  background-color: #0a0a0a;
+  color: #ddd;
+  font-size: 12pt;
   font-weight: 300;
-  letter-spacing: -1px;
+  letter-spacing: 2px;
+  padding: 2px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+
+}
+#reviews-container h3 {
+  color: #f58500;
+  font-size: 1.2em;
+  font-weight: 300;
   padding-bottom: 1pt;
+}
+#reviews-container h4 {
+  color: #080808;
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom: 1pt;
+
+
 }
 #reviews-list {
   margin: 15px;
   padding: 0;
+  width: 100%;
 }
 #reviews-list li {
   background-color: #fff;
   border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
   overflow: hidden;
   padding: 0 20px 20px;
   position: relative;
@@ -189,10 +238,7 @@
   margin: 0 0 10px;
   display: flex;
 }
-table  {
-  border: 20px;
-  color: #666;
-}
+
 
 
 
