@@ -17,6 +17,7 @@
 <body class="container">
 
   <header>
+      <a href="#filter-options" class="skip-link">Skip to main content</a>
     <nav>
       <!--This doesn't need to be a link -->
       <h1>Restaurant Reviews</h1>
@@ -29,7 +30,7 @@
     </section>
     <section>
 
-      <div class="filter-options" aria-label="Filter the restaurants" role="listbox">
+      <div class="filter-options" id="filter-options"aria-label="Filter the restaurants" role="listbox">
         <h2>Filter Results</h2>
 
         <label for="neighborhoods-select">Select Neighbourhood</label><select id="neighborhoods-select" name="neighborhoods" tabindex="0" onchange="updateRestaurants()">

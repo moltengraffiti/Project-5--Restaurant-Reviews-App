@@ -164,3 +164,18 @@ nav h1 {
   width: 200px;
   border-radius: 20px;
 }
+
+filter-options:focus{
+  padding: 25px;
+}
+
+.skip-link{
+  display:block;
+  position: absolute;
+  top:15px;
+  left: -1000px;
+
+}
+.skip-link:focus{
+  left:15px;
+}
