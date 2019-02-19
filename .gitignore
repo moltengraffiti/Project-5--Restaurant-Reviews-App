@@ -8,3 +8,8 @@ modules.xml
 vcs.xml
 workspace.xml
 Project_Default.xml
+
+node_modules/
+logs
+*.log
+npm-debug.log*
