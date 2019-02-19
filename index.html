@@ -24,25 +24,25 @@
     </nav>
   </header>
 
-  <main id="maincontent" tabindex="0">
-    <section id="map-container" tabindex="-1" role="application">
-      <div id="map" tabindex="-1" role="application"></div>
+  <main id="maincontent">
+    <section id="map-container" role="application" aria-label="Map from Mapbox">
+      <div id="map" tabindex="-1" aria-labelledby="map-container"></div>
     </section>
-    <section>
+    <section >
 
-      <div class="filter-options" id="filter-options"aria-label="Filter the restaurants" role="listbox">
+      <div class="filter-options" id="filter-options" role="contentinfo" aria-label="Filter restaurants by neighbourhood and cuisine">
         <h2>Filter Results</h2>
 
-        <label for="neighborhoods-select">Select Neighbourhood</label><select id="neighborhoods-select" name="neighborhoods" tabindex="0" onchange="updateRestaurants()">
+        <select id="neighborhoods-select"name="neighborhoods" aria-label="Filter by neighbourhood" onchange="updateRestaurants()">
             <option value="all">All Neighborhoods</option>
           </select>
-          <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+          <select id="cuisines-select"  aria-label="Filter by cuisine" name="cuisines" onchange="updateRestaurants()">
             <option value="all">All Cuisines</option>
           </select>
         </div>
       </div>
 
-      <ul id="restaurants-list" tabindex="0" aria-label="List of restaurants"></ul>
+      <ul id="restaurants-list" ></ul>
     </section>
   </main>
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"

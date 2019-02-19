@@ -28,32 +28,32 @@
         <h1>Restaurant Reviews</h1>
       </nav>
 
-      <ul id="breadcrumb">
+      <ul id="breadcrumb" aria-label="breadcrumb">
         <li><a href="/">Home</a></li>
       </ul>
     </header>
 
     <main id="maincontent">
-      <div id="restaurant-container">
+      <div id="restaurant-container" role="contentinfo">
         <h2 id="restaurant-name"></h2>
         <p id="restaurant-cuisine"></p>
       </div>
 
-      <div id="image-info">
-        <img id="restaurant-img" />
+      <div id="image-info" role="img" aria-label="Image of the restaurant">
+        <img id="restaurant-img" aria-labelledby="image-info">
       </div>
 
-      <p id="restaurant-address"></p>
-      <div id="map-container">
-        <div id="map"></div>
+      <p id="restaurant-address" role="contentinfo" aria-label="Restaurant address"></p>
+      <div id="map-container" role="application" arai-label="Map from Mapbox">
+        <div id="map" aria-labelledby="map-container"></div>
       </div>
 
-      <div id="restaurant-info-container">
+      <div id="restaurant-info-container" role="contentinfo" aria-label="Restaurant opening hours">
         <h3 id="restaurant-hours-header">Opening Hours</h3>
         <table id="restaurant-hours"></table>
       </div>
 
-      <div id="reviews-container">
+      <div id="reviews-container" role="contentinfo" aria-label="List of restaurant reviews">
         <ul id="reviews-list"></ul>
       </div>
     </main>
