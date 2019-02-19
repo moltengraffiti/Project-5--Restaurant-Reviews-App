@@ -12,15 +12,13 @@ const cacheAssets = [
     'js/dbhelper.js',
     'js/main.js',
     'js/restaurant_info.js',
-    'img/*'
-
-
 ];
+
 
 //Listen for the instalation event fired when service worker is registered. then add the cache assets
 self.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open(cacheName).then(function (cache) {
+        caches.open('v1').then(function (cache) {
             return cache.addAll(cacheAssets);
         })
     );
