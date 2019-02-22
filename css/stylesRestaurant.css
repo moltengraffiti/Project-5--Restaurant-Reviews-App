@@ -24,15 +24,16 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+#image-info{
+  display: flex;
+  justify-content: center;
+}
 #restaurants-list .restaurant-img {
   background-color: rgb(134, 133, 133);
-  display: block;
-  max-width: 100%;
-  max-height: 300px;
-  min-width: 80%;
+  display: flex;
   border-radius: 50%;
   border: 1px solid #ccc;
+  max-width: 100%;
 }
 
 #restaurants-list li h3 {

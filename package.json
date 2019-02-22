@@ -2,9 +2,6 @@
   "name": "restaurant-reviews-project",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "python -m http.server"
-  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",

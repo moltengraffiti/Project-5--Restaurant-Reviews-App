@@ -149,11 +149,11 @@ class DBHelper {
   /**
    * Restaurant image URL.
    
-  Change the default image url, and default to the medium sized image
+  Change the default image url, and default to the small sized image
   Used code from Alexandro Perez's walkthrough - https://alexandroperez.github.io/mws-walkthrough/?1.16.making-app-images-responsive
  */
  static imageUrlForRestaurant(restaurant) {
-    let url = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-medium.jpeg`;
+    let url = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}-small.jpeg`;
     return url;
   }
 
@@ -163,7 +163,6 @@ class DBHelper {
    */
 
 
-   /*Remove for now, work on later
   static imageSrcsetForRestaurant(restaurant) {
     const imageSrc = `/img/${(restaurant.photograph.split('.')[0]||restaurant.id)}`;
     return `${imageSrc}-small.jpeg 300w,
@@ -174,13 +173,17 @@ class DBHelper {
   /**
    * Restaurant sizes attribute so browser knows image sizes before deciding
    * what image to download.
-  
+  */
   static imageSizesForRestaurant(restaurant) {
     return `(max-width: 360px) 280px,
-            (max-width: 600px) 600px,
-            400px`;
+    (max-width: 400px) 300px,
+    (max-width: 500px) 360px,
+    (max-width: 600px) 420px,
+    (max-width: 700px) 520px,
+     (max-width: 800px) 620px,
+            720px`;
   }
-   */
+   
 
   /**
    * Map marker for a restaurant.

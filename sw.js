@@ -11,7 +11,8 @@ const cacheAssets = [
     'css/mediaQueries.css',
     'js/dbhelper.js',
     'js/main.js',
-    'js/restaurant_info.js',
+    'js/restaurant_info.js'
+ 
    
 ];
 
