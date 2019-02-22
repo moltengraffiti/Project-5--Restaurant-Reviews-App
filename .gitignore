@@ -10,7 +10,7 @@ vcs.xml
 workspace.xml
 Project_Default.xml
 /images/*
-.idea/
+/.idea/
 .babelrc
 package-lock.json
 package.json

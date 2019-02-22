@@ -7,7 +7,6 @@
   - [Project Aim](#project-aim)
   - [How to view the Project](#how-to-view-the-project)
   - [Leaflet.js and Mapbox:](#leafletjs-and-mapbox)
-  - [Resources Used](#resources-used)
   - [Authors](#authors)
   - [License](#license)
 
@@ -25,13 +24,6 @@ For the **Restaurant Reviews** projects, you will incrementally convert a static
 ## Leaflet.js and Mapbox:
 
 This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). 
-
-## Resources Used
-
-- Ryan Waite - [walkthrough](https://www.youtube.com/watch?v=ag_jBDFAL0U&feature=youtu.be)
-- Alexandro Perez - [walkthrough](https://alexandroperez.github.io/mws-walkthrough/?1.1.introduction)
-- Matthew Cranford - [walkthrough](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/)
-- Chrome Vox - screenreader for Chrome -[here](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en)
 
 ## Authors
 
