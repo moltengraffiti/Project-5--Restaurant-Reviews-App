@@ -11,8 +11,8 @@ workspace.xml
 Project_Default.xml
 images/*
 .idea/
-js/gulpfile.babel.js
-js/package.json
+gulpfile.babel.js
+package.json
 ResourcesUsed.md
 .babelrc
 .gitignore
