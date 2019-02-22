@@ -7,7 +7,7 @@
       src="//normalize-css.googlecode.com/svn/trunk/normalize.css"
     />
     <!-- Main CSS file -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/stylesMain.css" type="text/css" />
     <link rel="stylesheet" href="css/stylesRestaurant.css" type="text/css" />
@@ -23,7 +23,7 @@
 
   <body class="inside">
     <header>
-        <a href="#restaurant-name" class="skip-link">Skip to main content</a>
+      <a href="#restaurant-name" class="skip-link">Skip to main content</a>
       <nav>
         <h1>Restaurant Reviews</h1>
       </nav>
@@ -40,20 +40,32 @@
       </div>
 
       <div id="image-info" role="img" aria-label="Image of the restaurant">
-        <img id="restaurant-img" aria-labelledby="image-info">
+        <img id="restaurant-img" aria-labelledby="image-info" />
       </div>
 
-      <p id="restaurant-address" role="contentinfo" aria-label="Restaurant address"></p>
+      <p
+        id="restaurant-address"
+        role="contentinfo"
+        aria-label="Restaurant address"
+      ></p>
       <div id="map-container" role="application" arai-label="Map from Mapbox">
         <div id="map" aria-labelledby="map-container"></div>
       </div>
 
-      <div id="restaurant-info-container" role="contentinfo" aria-label="Restaurant opening hours">
+      <div
+        id="restaurant-info-container"
+        role="contentinfo"
+        aria-label="Restaurant opening hours"
+      >
         <h3 id="restaurant-hours-header">Opening Hours</h3>
         <table id="restaurant-hours"></table>
       </div>
 
-      <div id="reviews-container" role="contentinfo" aria-label="List of restaurant reviews">
+      <div
+        id="reviews-container"
+        role="contentinfo"
+        aria-label="List of restaurant reviews"
+      >
         <ul id="reviews-list"></ul>
       </div>
     </main>
@@ -67,8 +79,7 @@
       src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
       integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
       crossorigin=""
-    >
-  </script>
+    ></script>
     <script src="js/secret.js"></script>
     <script src="js/dbhelper.js"></script>
     <script src="js/restaurant_info.js"></script>

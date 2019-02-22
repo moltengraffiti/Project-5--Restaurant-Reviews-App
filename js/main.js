@@ -1,10 +1,6 @@
-
-
 let restaurants, neighborhoods, cuisines;
 var newMap;
 var markers = [];
-
-
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -84,8 +80,7 @@ initMap = () => {
   L.tileLayer(
     "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}",
     {
-      mapboxToken:
-      SECRET.mapbox_key,
+      mapboxToken: SECRET.mapbox_key,
       maxZoom: 18,
       attribution:
         'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
@@ -188,7 +183,7 @@ createRestaurantHTML = restaurant => {
   const image = document.createElement("img");
   image.className = "restaurant-img";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
- image.srcset = DBHelper.imageSrcsetForRestaurant(restaurant);
+  image.srcset = DBHelper.imageSrcsetForRestaurant(restaurant);
   image.sizes = DBHelper.imageSizesForRestaurant(restaurant);
   image.alt = "Picture of " + restaurant.name;
   li.append(image);
@@ -207,7 +202,7 @@ createRestaurantHTML = restaurant => {
   /* Change to button, link doesn't make sense here */
   const more = document.createElement("button");
   more.innerHTML = "More Info";
-  more.setAttribute('aria-label', "View details about " +restaurant.name);
+  more.setAttribute("aria-label", "View details about " + restaurant.name);
   more.addEventListener("click", function() {
     const url = DBHelper.urlForRestaurant(restaurant);
     window.location = url;
