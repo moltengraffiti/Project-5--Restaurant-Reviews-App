@@ -1,6 +1,6 @@
 
 
-const cacheName = 'restaurant-v1';
+const staticCacheName = 'restaurant-v1';
 const cacheAssets = [
     '/',
     '/index.html',
@@ -12,13 +12,14 @@ const cacheAssets = [
     'js/dbhelper.js',
     'js/main.js',
     'js/restaurant_info.js',
+   
 ];
 
 
 //Listen for the instalation event fired when service worker is registered. then add the cache assets
 self.addEventListener('install', function (event) {
     event.waitUntil(
-        caches.open('v1').then(function (cache) {
+        caches.open('restaurant-v1').then(function (cache) {
             return cache.addAll(cacheAssets);
         })
     );
