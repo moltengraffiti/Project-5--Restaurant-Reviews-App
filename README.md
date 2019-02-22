@@ -39,4 +39,4 @@ Udacity source code available [here](https://github.com/udacity/mws-restaurant-s
 
 ## License
 
-Unknown, believed [MIT] <https://choosealicense.com/licenses/mit/>
+Unknown, believed [MIT](https://choosealicense.com/licenses/mit/)

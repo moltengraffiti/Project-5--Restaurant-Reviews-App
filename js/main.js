@@ -161,6 +161,7 @@ createRestaurantHTML = restaurant => {
 
   /* Change to h3 */
   const name = document.createElement("h3");
+  name.setAttribute("tabindex", "0");
   name.innerHTML = restaurant.name;
   li.append(name);
 
@@ -169,6 +170,7 @@ createRestaurantHTML = restaurant => {
 
   /*Add cuisine type to the main page cards */
   const cuisines = document.createElement("h4");
+  cuisines.setAttribute("tabindex", "0");
   cuisines.innerHTML = restaurant.cuisine_type;
   li.append(cuisines);
 
@@ -182,10 +184,12 @@ createRestaurantHTML = restaurant => {
   li.append(image);
 
   const neighborhood = document.createElement("h4");
+  neighborhood.setAttribute("tabindex", "0");
   neighborhood.innerHTML = restaurant.neighborhood;
   li.append(neighborhood);
 
   const address = document.createElement("p");
+  address.setAttribute("tabindex", "0");
   address.innerHTML = restaurant.address;
   li.append(address);
 

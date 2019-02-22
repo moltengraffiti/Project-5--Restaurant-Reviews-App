@@ -36,37 +36,39 @@
     <main id="maincontent">
       <div id="restaurant-container" role="contentinfo">
         <h2 id="restaurant-name"></h2>
-        <p id="restaurant-cuisine"></p>
+        <p id="restaurant-cuisine" tabindex="0"></p>
       </div>
 
       <div id="image-info" role="img" aria-label="Image of the restaurant">
         <img id="restaurant-img" aria-labelledby="image-info" />
       </div>
 
-      <p
+      <p tabindex="0"
         id="restaurant-address"
         role="contentinfo"
         aria-label="Restaurant address"
       ></p>
-      <div id="map-container" role="application" arai-label="Map from Mapbox">
+      <div id="map-container" tabindex="-1" role="application" arai-label="Map from Mapbox">
         <div id="map" aria-labelledby="map-container"></div>
       </div>
 
       <div
+      tabindex="0"
         id="restaurant-info-container"
         role="contentinfo"
         aria-label="Restaurant opening hours"
       >
         <h3 id="restaurant-hours-header">Opening Hours</h3>
-        <table id="restaurant-hours"></table>
+        <table id="restaurant-hours" tabindex="0"></table>
       </div>
 
       <div
+      tabindex="0"
         id="reviews-container"
         role="contentinfo"
         aria-label="List of restaurant reviews"
       >
-        <ul id="reviews-list"></ul>
+        <ul id="reviews-list" tabindex="0"></ul>
       </div>
     </main>
 
