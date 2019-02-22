@@ -15,7 +15,6 @@ gulpfile.babel.js
 package.json
 ResourcesUsed.md
 .babelrc
-.gitignore
 
 node_modules/
 logs
