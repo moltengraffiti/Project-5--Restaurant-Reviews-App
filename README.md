@@ -28,14 +28,14 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 
 ## Resources Used
 
-- Ryan Waite - [walkthrough] <https://www.youtube.com/watch?v=ag_jBDFAL0U&feature=youtu.be>
-- Alexandro Perez - [walkthrough] <https://alexandroperez.github.io/mws-walkthrough/?1.1.introduction>
-- Matthew Cranford - [walkthrough]<https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/>
-- Chrome Vox - screenreader for Chrome -[here] <https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en>
+- Ryan Waite - [walkthrough](https://www.youtube.com/watch?v=ag_jBDFAL0U&feature=youtu.be)
+- Alexandro Perez - [walkthrough](https://alexandroperez.github.io/mws-walkthrough/?1.1.introduction)
+- Matthew Cranford - [walkthrough](https://matthewcranford.com/restaurant-reviews-app-walkthrough-part-1-map-api/)
+- Chrome Vox - screenreader for Chrome -[here](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en)
 
 ## Authors
 
-Udacity source code available [here] <https://github.com/udacity/mws-restaurant-stage-1>
+Udacity source code available [here](https://github.com/udacity/mws-restaurant-stage-1)
 
 ## License
 
