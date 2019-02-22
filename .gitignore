@@ -11,9 +11,6 @@ workspace.xml
 Project_Default.xml
 images/*
 .idea/
-gulpfile.babel.js
-package.json
-ResourcesUsed.md
 .babelrc
 
 node_modules/
