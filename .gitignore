@@ -9,9 +9,12 @@ modules.xml
 vcs.xml
 workspace.xml
 Project_Default.xml
-images/*
+/images/*
 .idea/
 .babelrc
+package-lock.json
+package.json
+gulpfile.babel.js
 
 node_modules/
 logs
