@@ -1,3 +1,7 @@
+/* Have changed some of the order of  html elements being created, also type of some of the elements for better layout/navigation
+ *Calls secret file for API key
+ */
+
 let restaurants, neighborhoods, cuisines;
 var newMap;
 var markers = [];
@@ -92,18 +96,6 @@ initMap = () => {
 
   updateRestaurants();
 };
-/* window.initMap = () => {
-  let loc = {
-    lat: 40.722216,
-    lng: -73.987501
-  };
-  self.map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: loc,
-    scrollwheel: false
-  });
-  updateRestaurants();
-} */
 
 /**
  * Update page and map for current restaurants.
@@ -180,6 +172,7 @@ createRestaurantHTML = restaurant => {
   cuisines.innerHTML = restaurant.cuisine_type;
   li.append(cuisines);
 
+  //SRcset and sizes here for image/browser responsivness
   const image = document.createElement("img");
   image.className = "restaurant-img";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
@@ -227,13 +220,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 };
-/* addMarkersToMap = (restaurants = self.restaurants) => {
-  restaurants.forEach(restaurant => {
-    // Add marker to the map
-    const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.map);
-    google.maps.event.addListener(marker, 'click', () => {
-      window.location.href = marker.url
-    });
-    self.markers.push(marker);
-  });
-} */

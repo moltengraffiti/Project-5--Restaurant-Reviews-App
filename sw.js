@@ -1,42 +1,8 @@
 
 
 const staticCacheName = 'restaurant-v1';
-/*
+
 const cacheAssets = [
-    '/',
-    '/index.html',
-    '/restaurant.html',
-    'css/stylesRestaurant.css',
-    'css/stylesMain.css',
-    'css/stylesRestaurantDetail.css',
-    'css/mediaQueries.css',
-    'js/dbhelper.js',
-    'js/main.js',
-    'js/restaurant_info.js'
- 
-   
-];
-
-
-//Listen for the instalation event fired when service worker is registered. then add the cache assets
-self.addEventListener('install', function (event) {
-    event.waitUntil(
-        caches.open(staticCacheName).then(function (cache) {
-            return cache.addAll(cacheAssets);
-        }).catch(function(err){
-            console.log("Error opening or adding to cache", err)
-        })
-    );
-
-});
-*/
-
-//Listen for the instalation event fired when service worker is registered. then add the cache assets
-self.addEventListener('install', function (event) {
-    event.waitUntil(
-        caches.open(staticCacheName).then(function (cache) {
-            return cache.addAll(
-                [
                     '/',
                     '/index.html',
                     '/restaurant.html',
@@ -47,15 +13,15 @@ self.addEventListener('install', function (event) {
                     'js/restaurant_info.js',
                     '/img/',
                     'js/registersw.js'
-                
+];
 
-                   
-                 
-                   
-                ]
-            );
-        }).catch(function(err){
-            console.log("Error opening or adding to cache", err)
+//Listen for the instalation event fired when service worker is registered. then add the cache assets
+self.addEventListener('install', function (event) {
+    event.waitUntil(
+        caches.open(staticCacheName).then(function (cache) {
+            return cache.addAll(cacheAssets);
+        }).catch(function(e){
+            console.log("Error opening or adding to cache", e)
         })
     );
 

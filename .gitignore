@@ -1,6 +1,7 @@
 
 css/styles.css
-stylesRestaurantDetail.css
+css/stylesRestaurantDetail.css
+css/mediaQueries.css
 secret.js
 encodings.xml
 misc.xml
@@ -8,6 +9,13 @@ modules.xml
 vcs.xml
 workspace.xml
 Project_Default.xml
+images/*
+.idea/
+js/gulpfile.babel.js
+js/package*
+ResourcesUsed.md
+.babelrc
+.gitignore
 
 node_modules/
 logs

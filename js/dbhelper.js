@@ -174,8 +174,7 @@ class DBHelper {
   }
 
   /*
-   * Restaurant srcset attribute for browser to decide best resolution. It uses restaurant.photograph
-   * and fallbacks to restaurant.id if former is missing.
+   * Restaurant srcset attribute for browser to decide best resolution.
    */
 
   static imageSrcsetForRestaurant(restaurant) {
@@ -216,14 +215,4 @@ class DBHelper {
     marker.addTo(newMap);
     return marker;
   }
-  /* static mapMarkerForRestaurant(restaurant, map) {
-    const marker = new google.maps.Marker({
-      position: restaurant.latlng,
-      title: restaurant.name,
-      url: DBHelper.urlForRestaurant(restaurant),
-      map: map,
-      animation: google.maps.Animation.DROP}
-    );
-    return marker;
-  } */
 }

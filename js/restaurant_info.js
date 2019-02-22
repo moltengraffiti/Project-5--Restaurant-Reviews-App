@@ -1,3 +1,7 @@
+/* Have changed some of the order of  html elements being created, also type of some of the elements for better layout/navigation
+ *Calls secret file for API key
+ */
+
 let restaurant;
 var newMap;
 
@@ -40,22 +44,6 @@ initMap = () => {
   });
 };
 
-/* window.initMap = () => {
-  fetchRestaurantFromURL((error, restaurant) => {
-    if (error) { // Got an error!
-      console.error(error);
-    } else {
-      self.map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16,
-        center: restaurant.latlng,
-        scrollwheel: false
-      });
-      fillBreadcrumb();
-      DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
-    }
-  });
-} */
-
 /**
  * Get current restaurant from page URL.
  */
@@ -93,6 +81,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const address = document.getElementById("restaurant-address");
   address.innerHTML = restaurant.address;
 
+  //Srcset and size options here for image/device responsivness
   const image = document.getElementById("restaurant-img");
   image.className = "restaurant-img";
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
