@@ -1,30 +1,30 @@
 {
-  "name": "restaurant-reviews-project",
-  "version": "0.1.0",
-  "private": true,
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-register": "^6.26.3",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-responsive": "^2.11.0",
-    "run-sequence": "^2.2.1",
-    "sharp": "^0.20.5"
-  },
-  "description": "- [Restaurant Reviews App - Project 5, Udacity FEND](#restaurant-reviews-app---project-5-udacity-fend)\r   - [Table of Contents](#table-of-contents)\r   - [Project Aim](#project-aim)\r   - [How to view the Project](#how-to-view-the-project)\r   - [Leaflet.js and Mapbox:](#leafletjs-and-mapbox)\r   - [Authors](#authors)\r   - [License](#license)",
-  "main": "sw.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moltengraffiti/Project-5--Restaurant-Reviews-App.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/moltengraffiti/Project-5--Restaurant-Reviews-App/issues"
-  },
-  "homepage": "https://github.com/moltengraffiti/Project-5--Restaurant-Reviews-App#readme"
+	"name": "fendproj5",
+	"version": "1.0.0",
+
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-register": "^6.26.3",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-responsive": "^2.11.0",
+		"run-sequence": "^2.2.1",
+		"sharp": "^0.20.5"
+	},
+	"description": "- [Restaurant Reviews App - Project 5, Udacity FEND](#restaurant-reviews-app---project-5-udacity-fend)\r   - [Table of Contents](#table-of-contents)\r   - [Project Aim](#project-aim)\r   - [How to view the Project](#how-to-view-the-project)\r   - [Leaflet.js and Mapbox:](#leafletjs-and-mapbox)\r   - [Authors](#authors)\r   - [License](#license)",
+	"main": "sw.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/moltengraffiti/Project-5--Restaurant-Reviews-App.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/moltengraffiti/Project-5--Restaurant-Reviews-App/issues"
+	},
+	"homepage": "https://github.com/moltengraffiti/Project-5--Restaurant-Reviews-App#readme"
 }
