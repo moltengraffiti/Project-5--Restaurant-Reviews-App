@@ -13,7 +13,7 @@ Project_Default.xml
 /.idea/
 .babelrc
 package-lock.json
-package.json
+//package.json
 gulpfile.babel.js
 
 node_modules/
